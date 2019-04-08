@@ -4,7 +4,7 @@
 }
 
 .header {
-	height: 75vh;
+	height: 70vh;
 	background: url('../img/orig.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 140%;
@@ -41,7 +41,8 @@
 }
 
 .article__title {
-	font-size: 30px;
+	
+	font-size: 20px;
 	font-family: 'Indie Flower', sans-serif;
 	text-align: right;
 }
@@ -56,45 +57,48 @@
 	margin-right: 10px;
 }
 
-/*@media only screen and (min-width: 800px) {
-	body {
-		background: red;
-	}
+.footer {
+	display: flex;
+	justify-content: space-around;
+    margin: 15px 25px;
+    font-size: 18px;
+    font-family: 'Indie Flower', sans-serif;
+	text-align: center;
 }
 
-@media only screen and (min-width: 1200px) {
-	body {
-		background: white;
-	}
-}*/
+.textBlock {
+	width: 30%;
+	padding: 5px 10px;
+}
+
+.linksBlock {
+	width: 20%;
+	padding: 5px 10px;
+}
+
 
 @media only screen 
-and (min-device-width : 414px)
-and (max-device-width : 736px) {
-	
-	.header {
-		height: 100vh;
-	}
+and (min-device-width : 420px)
+and (max-device-width : 840px) {
 
-	.header_title {
-		font-size: 50px;
-		height: 10vh;
-		line-height: 10vh;
-		width: 60%;
-		margin: auto;
-		left: 0;
-		right: 0;
-		top: 5vh;
+	.header {
+		height: 75vh;
+	}
+	.header__title {
+		height: 8vh;
+		line-height: 8vh;
+		margin-top: 1vh;
 	}
 
 	.article {
 		flex-direction: column;
-		justify-content: center;
+		bottom: 10px;
 	}
 
 	.article__block {
 		width: 80%;
-		height: 20vh;
+		height: 15vh;
 		margin: auto;
+		margin-bottom: 40px;
 	}
 }
